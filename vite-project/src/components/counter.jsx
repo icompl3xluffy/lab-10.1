@@ -1,14 +1,19 @@
 import { useState, useEffect } from "react";
 
 export default function Counter() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(()=>{
+     return Number(localStorage.getItem("count"))|| 0;
+});
+
   const [step, setStep] = useState(1);
   const [history, setHistory] = useState([0]);
 
   useEffect(() => {
     const time = setTimeout(() => {
       localStorage.setItem("count", count);
-    }, 500);
+    }, 500)
+    
+    return () => clearTimeout(time)
   }, [count]);
 
   function increment() {
