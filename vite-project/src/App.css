@@ -7,7 +7,7 @@ body {
 }
 
 .counter {
-  background-color: #f8c8dc;
+  background-color: #f8c8dc;   /* baby pink */
   color: black;
   border: 3px solid black;
   border-radius: 15px;
@@ -16,29 +16,34 @@ body {
   width: 400px;
   max-width: 90vw;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .counter h1,
 .counter h2,
-.counter h3 {
+.counter h3,
+.counter p {
   color: black;
-  margin: 8px 0;
+  margin: 0;
 }
 
 .buttons {
   display: flex;
   justify-content: center;
-  gap: 12px;
-  margin: 16px 0;
+  gap: 10px;
 }
 
 .counter button {
-  background-color: #d3d3d3;
+  background-color: #d3d3d3;   /* light gray */
   color: black;
   border: 2px solid black;
   border-radius: 15px;
   font-size: 18px;
   padding: 8px 16px;
+  margin: 0;
   cursor: pointer;
 }
 
@@ -49,7 +54,7 @@ body {
   font-size: 18px;
   width: 70px;
   padding: 6px;
-  margin-left: 8px;
+  margin-left: 10px;
 }
 
 .saved {
@@ -59,8 +64,10 @@ body {
 
 .history {
   list-style: none;
-  padding: 8px 16px;
+  padding: 10px 16px;
   margin: 0;
+  width: 100%;
+  box-sizing: border-box;
   max-height: 150px;
   overflow-y: auto;
   text-align: left;
@@ -70,5 +77,4 @@ body {
 
 .history li {
   padding: 6px 0;
-  border-bottom: 1px dashed black;
-}
+  border-bottom: 1px
