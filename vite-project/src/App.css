@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter {
+  background-color: #f8c8dc;
+  color: black;
+  border: 3px solid black;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 32px;
+  width: 400px;
+  max-width: 90vw;
+  text-align: center;
+}
+
+.counter h1,
+.counter h2,
+.counter h3 {
+  color: black;
+  margin: 8px 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.counter button {
+  background-color: #d3d3d3;
+  color: black;
+  border: 2px solid black;
+  border-radius: 15px;
+  font-size: 18px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.counter input {
+  color: black;
+  border: 2px solid black;
+  border-radius: 15px;
+  font-size: 18px;
+  width: 70px;
+  padding: 6px;
+  margin-left: 8px;
+}
+
+.saved {
+  font-style: italic;
+  font-size: 15px;
+}
+
+.history {
+  list-style: none;
+  padding: 8px 16px;
+  margin: 0;
+  max-height: 150px;
+  overflow-y: auto;
+  text-align: left;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.history li {
+  padding: 6px 0;
+  border-bottom: 1px dashed black;
+}
